@@ -22,6 +22,8 @@
     <!-- Style CSS -->
     <link rel="stylesheet" href="style.css">
     <!-- Modernizer JS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/fontawesome.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 
@@ -47,7 +49,63 @@
                 <div class="header-button col-lg-3 col-md-6 col-6">
                     <!-- Header Buttons Wrapper -->
                     <div class="header-button-wrapper">
-                        <a href="#" class="btn btn-light-border btn-hover-red d-none d-md-inline-flex">Language</a>
+                        <div id="select-box" class="btn btn-light-border btn-hover-red d-none d-md-inline-flex">
+                            <input type="checkbox" id="options-view-button">
+                            <div id="select-button" class="brd">
+                                <div id="selected-value">
+                                    <span>Language</span>
+                                </div>
+                                <div id="chevrons">
+                                    <i class="fas fa-chevron-up"></i>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div id="options">
+                                <div class="option">
+                                    <input class="s-c top" type="radio" name="platform" value="codepen">
+                                    <input class="s-c bottom" type="radio" name="platform" value="codepen">
+                                    <i class="fab fa-codepen"></i>
+                                    <span class="label">CodePen</span>
+                                    <span class="opt-val">CodePen</span>
+                                </div>
+                                <div class="option">
+                                    <input class="s-c top" type="radio" name="platform" value="dribbble">
+                                    <input class="s-c bottom" type="radio" name="platform" value="dribbble">
+                                    <i class="fab fa-dribbble"></i>
+                                    <span class="label">Dribbble</span>
+                                    <span class="opt-val">Dribbble</span>
+                                </div>
+                                <div class="option">
+                                    <input class="s-c top" type="radio" name="platform" value="behance">
+                                    <input class="s-c bottom" type="radio" name="platform" value="behance">
+                                    <i class="fab fa-behance"></i>
+                                    <span class="label">Behance</span>
+                                    <span class="opt-val">Behance</span>
+                                </div>
+                                <div class="option">
+                                    <input class="s-c top" type="radio" name="platform" value="hackerrank">
+                                    <input class="s-c bottom" type="radio" name="platform" value="hackerrank">
+                                    <i class="fab fa-hackerrank"></i>
+                                    <span class="label">HackerRank</span>
+                                    <span class="opt-val">HackerRank</span>
+                                </div>
+                                <div class="option">
+                                    <input class="s-c top" type="radio" name="platform" value="stackoverflow">
+                                    <input class="s-c bottom" type="radio" name="platform" value="stackoverflow">
+                                    <i class="fab fa-stack-overflow"></i>
+                                    <span class="label">StackOverflow</span>
+                                    <span class="opt-val">StackOverflow</span>
+                                </div>
+                                <div class="option">
+                                    <input class="s-c top" type="radio" name="platform" value="freecodecamp">
+                                    <input class="s-c bottom" type="radio" name="platform" value="freecodecamp">
+                                    <i class="fab fa-free-code-camp"></i>
+                                    <span class="label">FreeCodeCamp</span>
+                                    <span class="opt-val">FreeCodeCamp</span>
+                                </div>
+                                <div id="option-bg"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
@@ -181,7 +239,7 @@
     </div><!-- Work Process Section End -->
 
     <!-- CTA Section Start SOLUTION -->
-    <div class="cta-section section overlay-gradient overlay-opacity-90 pt-100 pb-110" id="solution" style="background-image: url(img/bg/funfact.jpg)">
+    <div class="cta-section section overlay-gradient overlay-opacity-90 pt-100 pb-110" id="solution" style="background-image: url(img/bg/easy-integration.jpg)">
         <div class="container">
             <div class="row">
                 
@@ -192,6 +250,14 @@
                         NovalexCoin wants them all to understand its state-of-the-art educational business approach and how they can benefit from its cost-lowering, time-saving and fraud-protected smart solutions. We build the technology that will revolutionize the education industry as a whole. The vision is the groundbreaking disruption of the dusty and outdated education system and its certification and approval process.</h4>
                 </div>
                 
+            </div>
+        </div>
+    </div><!-- CTA Section End -->
+
+    <!-- CTA Section Start SOLUTION -->
+    <div class="cta-section section overlay-gradient overlay-opacity-90 pt-100 pb-110" id="solution" style="background-image: url(img/bg/easy-integration.jpg)">
+        <div class="container">
+            <div class="row">
             </div>
         </div>
     </div><!-- CTA Section End -->

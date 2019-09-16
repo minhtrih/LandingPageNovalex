@@ -1005,7 +1005,7 @@ ul[class*="list-"] li + li { margin-top: 13px; }
     position: relative;
     width: 100%;
     content: '';
-    background: url(./img/hero/9.jpg) no-repeat scroll center center;
+    background: url('./img/hero/9.jpg') no-repeat scroll center center;
     background-size: cover;
     min-height: 900px;
     z-index: 1;
@@ -2488,4 +2488,85 @@ ul[class*="list-"] li + li { margin-top: 13px; }
 .footer-menu nav ul li a { color: #717171; font-size: 12px; line-height: 30px; font-style: italic; font-family: "Open Sans", sans-serif; color: #717171; }
 .footer-menu nav ul li a:hover { color: #0056ff; }
 
+/*-- Select Language --*/
+#select-box #select-button { position: relative; height: 16px; padding: 12px 14px; border-radius: 4px; cursor: pointer }
+#select-box #options-view-button { position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: pointer; z-index: 3 }
+#select-box #selected-value { font-size: 16px; line-height: 0; margin-right: 26px }
+
+#select-box .option i { width: 16px; /* height: 16px; */ }
+#select-box .option, .label { color: #2d3667; font-size: 16px }
+
+#select-box #chevrons { position: absolute; top: 0; right: -20px; bottom: 0; width: 12px }
+#select-box #chevrons i { display: block; height: 50%; color: #d1dede; font-size: 12px; text-align: right }
+#select-box #options-view-button:checked + #select-button #chevrons i { color: #2d3667 }
+
+#select-box .options { position: absolute; left: 0; width: 250px }
+#select-box #options { position: absolute; top: 42px; right: 0; left: 0; width: 233px; margin: 0 auto; background-color: #fff; border-radius: 20px }
+#select-box #options-view-button:checked ~ #options { border: 1px solid #e2eded; border-color: #eaf1f1 #e4eded #dbe7e7 #e4eded }
+
+#select-box .option { position: relative; line-height: 1; transition: 0.3s ease all; z-index: 2 }
+#select-box .option i { position: absolute; left: 14px; padding: 0; display: none }
+#select-box #options-view-button:checked ~ #options .option i { display: block; padding: 12px 0 }
+
+#select-box .label { display: none; padding: 0; margin-left: 27px }
+#select-box #options-view-button:checked ~ #options .label { display: block; padding: 12px 14px   }
+#select-box .s-c { position: absolute; left: 0; width: 100%; height: 50% }
+#select-box .s-c.top { top: 0 }
+#select-box .s-c.bottom { bottom: 0 }
+#select-box input[type="radio"] { position: absolute; right: 0; left: 0; width: 100%; height: 50%; margin: 0; opacity: 0; cursor: pointer }
+#select-box .s-c:hover ~ i { color: #fff; opacity: 0 }
+#select-box .s-c:hover { height: 100%; z-index: 1 }
+#select-box .s-c.bottom:hover + i { bottom: -25px; animation: moveup 0.3s ease 0.1s forwards }
+#select-box .s-c.top:hover ~ i { top: -25px; animation: movedown 0.3s ease 0.1s forwards }
+
+
+@keyframes moveup {
+	0%{ bottom: -5px; opacity: 0;}
+	100%{ bottom: 0; opacity: 1;}
+}
+
+@keyframes movedown {
+	0%{ top: -25px; opacity: 0;}
+	100%{ top: 0; opacity: 1;}
+}
+
+#select-box .label { transition: 0.3s ease all }
+#select-box .opt-val { position: absolute; left: 0; width: 217px; height: 21px; opacity: 0; transform: scale(0); color: #fff }
+#select-box .option input[type="radio"]:checked ~ .opt-val { opacity: 1; transform: scale(1) }
+#select-box .option input[type="radio"]:checked ~ i { top: 0; bottom: auto; opacity: 1; animation: unset }
+#select-box .option input[type="radio"]:checked ~ i, .option input[type="radio"]:checked ~ .label { color:#fff }
+#select-box .option input[type="radio"]:checked ~ .label:before { content: ''; position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: -1 }
+
+#select-box #options-view-button:not(:checked) ~ #options .option input[type="radio"]:checked ~ .opt-val { top: -30px }
+#select-box #options-view-button:not(:checked) ~ #select-button #selected-value { overflow: hidden; }
+#select-box #options-view-button:checked ~ #select-button #selected-value { overflow: hidden; }
+#select-box .option:nth-child(1) input[type="radio"]:checked ~ .label:before { background-color: #000; border-radius: 20px 20px 0 0 }
+#select-box .option:nth-child(1) input[type="radio"]:checked ~ .opt-val { top: -31px }
+#select-box .option:nth-child(2) input[type="radio"]:checked ~ .label:before { background-color: #ea4c89 }
+#select-box .option:nth-child(2) input[type="radio"]:checked ~ .opt-val { top: -71px }
+#select-box .option:nth-child(3) input[type="radio"]:checked ~ .label:before { background-color: #0057ff }
+#select-box .option:nth-child(3) input[type="radio"]:checked ~ .opt-val { top: -111px }
+#select-box .option:nth-child(4) input[type="radio"]:checked ~ .label:before { background-color: #32c766 }
+#select-box .option:nth-child(4) input[type="radio"]:checked ~ .opt-val { top: -151px }
+#select-box .option:nth-child(5) input[type="radio"]:checked ~ .label:before { background-color: #f48024 }
+#select-box .option:nth-child(5) input[type="radio"]:checked ~ .opt-val { top: -191px }
+#select-box .option:nth-child(6) input[type="radio"]:checked ~ .label:before { background-color: #006400; border-radius: 0 0 20px 20px }
+#select-box .option:nth-child(6) input[type="radio"]:checked ~ .opt-val { top: -231px }
+
+#select-box .option .fa-codepen { color: #000 }
+#select-box .option .fa-dribbble { color: #ea4c89 }
+#select-box .option .fa-behance { color: #0057ff }
+#select-box .option .fa-hackerrank { color: #32c766 }
+#select-box .option .fa-stack-overflow { color: #f48024 }
+#select-box .option .fa-free-code-camp { color: #006400 }
+
+#select-box #option-bg { position: absolute; top: 0; right: 0; left: 0; height: 40px; transition: 0.3s ease all; z-index: 1; display: none }
+#select-box #options-view-button:checked ~ #options #option-bg { display: block }
+#select-box .option:hover .label { color: #fff }
+#select-box .option:nth-child(1):hover ~ #option-bg { top: 0; background-color: #000; border-radius: 20px 20px 0 0 }
+#select-box .option:nth-child(2):hover ~ #option-bg { top: 40px; background-color: #ea4c89 }
+#select-box .option:nth-child(3):hover ~ #option-bg { top: 80px; background-color: #0057ff }
+#select-box .option:nth-child(4):hover ~ #option-bg { top: 120px; background-color: #32c766 }
+#select-box .option:nth-child(5):hover ~ #option-bg { top: 160px ; background-color: #f48024 }
+#select-box .option:nth-child(6):hover ~ #option-bg { top: 200px; background-color: #006400; border-radius: 0 0 20px 20px }
 
