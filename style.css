@@ -519,7 +519,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder { opacity: 1; -ms-fi
 .section-title-one h1 { font-weight: 700; line-height: 30px; text-transform: capitalize; padding-bottom: 20px; margin-bottom: 0; position: relative; }
 @media only screen and (max-width: 767px) { .section-title-one h1 { font-size: 30px; } }
 @media only screen and (max-width: 479px) { .section-title-one h1 { font-size: 24px; } }
-.section-title-one h1::before { position: absolute; left: 50%; bottom: 0; height: 1px; width: 50px; margin-left: -25px; background-color: #0056ff; content: ""; }
+.section-title-one h1::before { position: absolute; left: 50%; bottom: 0; height: 1px; width: 50px; margin-left: -25px; background-color: #ff0042; content: ""; }
 .section-title-one p { max-width: 630px; margin: 23px auto 0; line-height: 25px; }
 .section-title-one.left, .section-title-one.text-left { text-align: left !important; }
 .section-title-one.left h1::before, .section-title-one.text-left h1::before { left: 0; margin-left: 0; }
