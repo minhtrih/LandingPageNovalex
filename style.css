@@ -988,6 +988,8 @@ ul[class*="list-"] li + li { margin-top: 13px; }
 .header-transparent.stick .header-btn-cart:hover { border-color: #ff0042; background-color: #ff0042; color: #ffffff; }
 .header-transparent.stick .btn { border-color: #282828; color: #282828; }
 .header-transparent.stick .btn:hover { border-color: #ff0042; background-color: #ff0042; color: #ffffff; }
+.header-transparent.stick #select-box .opt-val { color: #282828; }
+.header-transparent.stick #select-box:hover .opt-val { color: #fff; }
 
 /*----------------------------------------*/
 /*  4.  Hero
@@ -2494,14 +2496,15 @@ ul[class*="list-"] li + li { margin-top: 13px; }
 #select-box #selected-value { font-size: 16px; line-height: 0; margin-right: 26px }
 
 #select-box .option i { width: 16px; /* height: 16px; */ }
-#select-box .option, .label { color: #2d3667; font-size: 16px }
+#select-box .option, .label { color: #000; font-size: 16px }
 
 #select-box #chevrons { position: absolute; top: 0; right: -20px; bottom: 0; width: 12px }
-#select-box #chevrons i { display: block; height: 50%; color: #d1dede; font-size: 12px; text-align: right }
-#select-box #options-view-button:checked + #select-button #chevrons i { color: #2d3667 }
+#select-box #chevrons i { display: none; height: 50%; color: #fff; font-size: 12px; text-align: right }
+#select-box:hover #chevrons i { display: block }
+#select-box #options-view-button:checked + #select-button #chevrons i { color: #fff }
 
 #select-box .options { position: absolute; left: 0; width: 250px }
-#select-box #options { position: absolute; top: 42px; right: 0; left: 0; width: 124px; margin: 0 auto; background-color: #fff; border-radius: 20px }
+#select-box #options { position: absolute; top: 42px; right: 0; left: 0; width: 127px; margin: 0 auto; background-color: #fff; border-radius: 20px }
 #select-box #options-view-button:checked ~ #options { border: 1px solid #e2eded; border-color: #eaf1f1 #e4eded #dbe7e7 #e4eded }
 
 #select-box .option { position: relative; line-height: 1; transition: 0.3s ease all; z-index: 2 }
@@ -2548,13 +2551,6 @@ ul[class*="list-"] li + li { margin-top: 13px; }
 #select-box .option:nth-child(4) input[type="radio"]:checked ~ .opt-val { top: -151px }
 #select-box .option:nth-child(5) input[type="radio"]:checked ~ .label:before { background-color: #006400; border-radius: 0 0 20px 20px }
 #select-box .option:nth-child(5) input[type="radio"]:checked ~ .opt-val { top: -191px }
-
-/* #select-box .option .fa-codepen { color: #000 }
-#select-box .option .fa-dribbble { color: #ea4c89 }
-#select-box .option .fa-behance { color: #0057ff }
-#select-box .option .fa-hackerrank { color: #32c766 }
-#select-box .option .fa-stack-overflow { color: #f48024 }
-#select-box .option .fa-free-code-camp { color: #006400 } */
 
 #select-box #option-bg { position: absolute; top: 0; right: 0; left: 0; height: 40px; transition: 0.3s ease all; z-index: 1; display: none }
 #select-box #options-view-button:checked ~ #options #option-bg { display: block }
