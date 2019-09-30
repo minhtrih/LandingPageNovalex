@@ -1837,7 +1837,7 @@ ul[class*="list-"] li + li { margin-top: 13px; }
 .single-gallery { position: relative; color: #ffffff; overflow: hidden; display: block; }
 .single-gallery img { width: 100%; }
 .single-gallery .hover { content: ""; position: absolute; width: 100%; height: 100%; background-color: rgba(0, 86, 255, 0.8); opacity: 1; }
-.single-gallery .hover::before { content: '\e657'; font-family: "Pe-icon-7-stroke"; position: absolute; left: 50%; top: 50%; font-size: 36px; z-index: 1; margin-left: -20px; margin-top: -20px; width: 40px; height: 40px; line-height: 40px; text-align: center; }
+.single-gallery .hover::before { content: ''; font-family: "Pe-icon-7-stroke"; position: absolute; left: 50%; top: 50%; font-size: 36px; z-index: 1; margin-left: -20px; margin-top: -20px; width: 40px; height: 40px; line-height: 40px; text-align: center; }
 .single-gallery:hover { color: #ffffff; }
 
 /*----------------------------------------*/
@@ -2560,4 +2560,3 @@ ul[class*="list-"] li + li { margin-top: 13px; }
 #select-box .option:nth-child(3):hover ~ #option-bg { top: 80px; background-color: #0057ff }
 #select-box .option:nth-child(4):hover ~ #option-bg { top: 120px; background-color: #32c766 }
 #select-box .option:nth-child(5):hover ~ #option-bg { top: 160px; background-color: #006400; border-radius: 0 0 20px 20px }
-
