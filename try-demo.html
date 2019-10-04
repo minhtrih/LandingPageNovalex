@@ -94,16 +94,55 @@
               <!-- Product Slider Start -->
               <div class="related-product-slider-two section">
                 <!-- Product Item Start -->
-                <div class="col">
+                <div class="col imgUp text-center">
                   <div class="product-item">
-                    <a href="#" class="image"><img src="img/product/1.jpg" alt="product"></a>
+                    <!-- Image -->
+                    <div class="imagePreview"></div>
+                    <!-- Label -->
+                    <span class="label">Label</span>
+                    <!-- Content -->
+                    <div class="content text-center">
+                      <div class="buy-button mt-20" style="width: inherit">
+                        <label class="btn btn-light-blue-outline btn-hover-red-outline" style="display: block">
+                          Upload image<input type="file" class="uploadFile img" value="Upload Photo"
+                            style="width: 0px;height: 0px;overflow: hidden;">
+                        </label>
+                      </div>
+                    </div>
                   </div>
                 </div><!-- Product Item End -->
 
                 <!-- Product Item Start -->
-                <div class="col">
-                  <div class="product-item">
-                    <a href="#" class="image"><img src="img/product/2.jpg" alt="product"></a>
+                <div class="col imgUp text-center">
+                  <div class="product-item contentarea">
+
+                    <!-- Capture -->
+                    <div class="row">
+                      <div class="col-12 camera">
+                        <video id="video">Use camera</video>
+                      </div>
+                      <canvas id="canvas">
+                      </canvas>
+                      <div class="col-12 output">
+                        <img id="photo" alt="The screen capture will appear in this box.">
+                      </div>
+                    </div>
+                    <!-- Label -->
+                    <span class="label">Label</span>
+                    <!-- Content -->
+                    <div class="content text-center">
+                      <div class="buy-button mt-20" style="width: inherit">
+                        <label id="startbutton" class="btn btn-light-blue-outline btn-hover-red-outline"
+                          style="display: none">
+                          Take photo<input type="file" class="uploadFile img" value="Upload Photo"
+                            style="width: 0px;height: 0px;overflow: hidden;">
+                        </label>
+                        <label id="turnoncamera" class="btn btn-light-blue-outline btn-hover-red-outline"
+                          style="display: block">
+                          Use camera
+                        </label>
+                      </div>
+                    </div>
                   </div>
                 </div><!-- Product Item End -->
               </div><!-- Product Slider End -->
@@ -111,7 +150,7 @@
 
             <div class="row">
               <div class="section-title-one text-left col-12 pb-50 mt-70">
-                <h1>Step 2</h1>
+                <h1>Step 2 Recognization</h1>
               </div>
               <div class="col-12 imgUp text-center">
                 <div class="imagePreview"></div>
@@ -205,6 +244,8 @@
   <script src="js/main.js"></script>
   <!-- Upload Image JS -->
   <script src="js/upload-image.js"></script>
+  <!-- Capture Image JS -->
+  <script src="js/capture.js"></script>
 
 </body>
 
