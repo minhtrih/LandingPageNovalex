@@ -2565,8 +2565,8 @@ ul[class*="list-"] li + li { margin-top: 13px; }
 	width: 100%;
 	height: 452px;
 	background-position: center center;
-	background:url('img/product/1.jpg');
-	background-color:#fff;
+	/* background:url('img/product/1.jpg'); */
+	background-color:#bcbcbc;
 	background-size: cover;
 	background-repeat:no-repeat;
 	display: inline-block;
@@ -2587,7 +2587,7 @@ ul[class*="list-"] li + li { margin-top: 13px; }
   border: 1px solid black;
   box-shadow: 2px 2px 3px black;
   width:350px;
-  height:226px;
+  height:262px;
 }
 
 .contentarea #canvas {
@@ -2595,4 +2595,4 @@ ul[class*="list-"] li + li { margin-top: 13px; }
 }
 
 .contentarea .camera { width: 370px; height: 226px; }
-.contentarea .output { width: 370px}
+.contentarea .output { width: 370px; height: 226px;}
