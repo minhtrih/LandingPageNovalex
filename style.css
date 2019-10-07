@@ -1056,8 +1056,6 @@ ul[class*="list-"] li + li { margin-top: 13px; }
 	margin-bottom: 60px;
 }
 
-
-
 /*-- Hero Slider One
 -------------------------------------*/
 .hero-slider-one { /*-- Slide Item --*/ /*-- Slider Dots --*/ }
@@ -1405,7 +1403,7 @@ ul[class*="list-"] li + li { margin-top: 13px; }
 .event-one-schedule-list .event-one-single-schedule > div.category-title { width: 470px; padding: 3px 0; }
 @media only screen and (min-width: 992px) and (max-width: 1200px) { .event-one-schedule-list .event-one-single-schedule > div.category-title { width: 380px; } }
 @media only screen and (min-width: 768px) and (max-width: 991px) { .event-one-schedule-list .event-one-single-schedule > div.category-title { width: 420px; } }
-.event-one-schedule-list .event-one-single-schedule > div.organizer { width: 230px; padding: 3px 0; }
+.event-one-schedule-list .event-one-single-schedule > div.organizer { width: 165px; padding: 3px 0; }
 @media only screen and (min-width: 992px) and (max-width: 1200px) { .event-one-schedule-list .event-one-single-schedule > div.organizer { width: 170px; } }
 @media only screen and (min-width: 768px) and (max-width: 991px) { .event-one-schedule-list .event-one-single-schedule > div.organizer { width: 180px; border: none; } }
 .event-one-schedule-list .event-one-single-schedule > div.buy-button { width: 270px; text-align: center; }
@@ -2587,12 +2585,17 @@ ul[class*="list-"] li + li { margin-top: 13px; }
   border: 1px solid black;
   box-shadow: 2px 2px 3px black;
   width:350px;
-  height:262px;
-}
-
-.contentarea #canvas {
-  display:none;
-}
-
+  height:262px;}
+.contentarea #canvas {display:none;}
 .contentarea .camera { width: 370px; height: 226px; }
 .contentarea .output { width: 370px; height: 226px;}
+
+/*-- Language Detect Form --*/
+.product-details-section .language-detect-form { background-color: #f6f6f6; padding: 25px 30px; overflow: hidden; }
+.product-details-section .language-detect-form form { margin-left: -5px; margin-right: -5px; }
+.product-details-section .language-detect-form form .input { display: block; float: left; padding: 5px; width: -webkit-fill-available; }
+@media only screen and (max-width: 767px) { .product-details-section .language-detect-form form .input { width: 50%; } }
+@media only screen and (max-width: 479px) { .product-details-section .language-detect-form form .input { width: 100%; } }
+.product-details-section .language-detect-form form .input select, .product-details-section .language-detect-form form .input input { height: 50px; line-height: 24px; border: none; border-radius: 5px; padding: 13px 20px; background-color: #ffffff; -webkit-appearance: none; -moz-appearance: none; appearance: none; width: 100%; color: #717171; font-family: "Open Sans", sans-serif; font-size: 14px; -webkit-box-shadow: 0 8px 8px rgba(40, 40, 40, 0.1); box-shadow: 0 8px 8px rgba(40, 40, 40, 0.1);}
+.product-details-section .language-detect-form form .input select option { padding: 5px 20px; }
+.product-details-section .language-detect-form form .input input[type="submit"] { height: 50px; line-height: 24px; border: none; border-radius: 5px; padding: 13px 20px; background-color: #0056ff; width: 100%; color: #ffffff; text-transform: uppercase; font-family: "Montserrat", sans-serif; font-size: 12px; }
