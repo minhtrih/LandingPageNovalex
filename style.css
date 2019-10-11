@@ -1633,7 +1633,7 @@ ul[class*="list-"] li + li { margin-top: 13px; }
 .video-content .play-video:hover img { margin-right: 20px; -webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1); }
 
 /*-- Join Form --*/
-.join-form .join-form-wrapper { background-color: #ffffff; -webkit-box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.1); box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.1); padding: 30px 40px 40px; margin-top: 15px; margin-bottom: -250px; }
+.join-form .join-form-wrapper { background-color: #ffffff; -webkit-box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.1); box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.1); padding: 30px 40px 40px; margin-top: 15px; margin-bottom: -90px; border-radius: 5px; }
 @media only screen and (min-width: 992px) and (max-width: 1200px) { .join-form .join-form-wrapper { margin-bottom: 0; } }
 @media only screen and (min-width: 768px) and (max-width: 991px) { .join-form .join-form-wrapper { margin-bottom: 30px; } }
 @media only screen and (max-width: 767px) { .join-form .join-form-wrapper { margin-bottom: 30px; } }
