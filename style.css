@@ -1948,6 +1948,8 @@ ul[class*="list-"] li + li { margin-top: 13px; }
 .single-sidebar { overflow: hidden; }
 .single-sidebar:last-child { margin-bottom: 0; }
 .single-sidebar .sidebar-title { margin-bottom: 35px; text-transform: uppercase; }
+.single-sidebar > ul > li.active > a { color: #ff0042; font-weight: 700 } 
+.single-sidebar > ul > li:hover > a { color: #0056ff; } 
 
 /*-- Sidebar Search --*/
 .sidebar-search { padding: 15px; background-color: #f6f6f6; }
